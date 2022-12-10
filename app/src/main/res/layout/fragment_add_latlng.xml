@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddLatlngFragment"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/_10mdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_margin="@dimen/_10mdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude       :"
+                    android:textSize="18sp"
+                    android:textColor="#616161"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/latitude2"
+                    android:layout_marginStart="20dp"
+                    android:textSize="18sp"
+                    android:textColor="#616161"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="@dimen/_10mdp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Longitude    :"
+                    android:textSize="18sp"
+                    android:textColor="#616161"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/longitude2"
+                    android:layout_marginStart="20dp"
+                    android:textSize="18sp"
+                    android:textColor="#616161"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="18sp"
+                android:textColor="#616161"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/_10mdp"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:layout_margin="@dimen/_10mdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40mdp"
+                android:elevation="@dimen/_4mdp"
+                android:textColor="#616161"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address Line 2"
+                android:textColor="#616161"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/_10mdp"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address2"
+                android:layout_margin="@dimen/_10mdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40mdp"
+                android:elevation="@dimen/_4mdp"
+                android:textColor="#616161"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Head Line"
+                android:textColor="#616161"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/_10mdp"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/headLine"
+                android:layout_margin="@dimen/_10mdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40mdp"
+                android:elevation="@dimen/_4mdp"
+                android:textColor="#616161"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#616161"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/_10mdp"/>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description"
+                android:layout_margin="@dimen/_10mdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120mdp"
+                android:elevation="@dimen/_4mdp"
+                android:textColor="#616161"
+                android:background="@color/white"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_margin="@dimen/_10mdp"
+                android:backgroundTint="#2D2D2D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
